@@ -19,10 +19,10 @@ import JsonSchema from 'components/JsonSchema'
 
 import { LandingPageProps } from 'types/api'
 
-const Index = ({ logo }: LandingPageProps) => (
+const Index = ({ logo, header, sectionAboutProject }: LandingPageProps) => (
   <>
-    <SectionHero logo={logo} />
-    <SectionAboutProject />
+    <SectionHero logo={logo} header={header} />
+    <SectionAboutProject data={sectionAboutProject} />
     <SectionTech />
     <SectionConcepts />
     <SectionModules />
